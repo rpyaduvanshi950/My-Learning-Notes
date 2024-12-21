@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        .container{
+            background-color: burlywood;
+            border: 3px solid red;
+            /*we can set top bottom left and right padding like this
+                padding-top: 79px;
+                padding-bottom: 79px;
+                padding-left: 97px;
+                padding-right: 79px;*/
+                /*padding togther can be written like this padding = top right bottom left; */
+                /*also like this padding : y(top/bottom) x(right/left);*/
+            padding: 9px;
+            margin: 34px;
+        }
+    </style>
+</head>
+<!-- for giving padding/margin one a specific side just use left right top bottom with padding/margin  -->
+<body>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis non eos, voluptas dicta quaerat autem, ab, perferendis minus ipsam dolorem vitae quos suscipit. </p>
+    </div>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="secound">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis non eos, voluptas dicta quaerat autem, ab, perferendis minus ipsam dolorem vitae quos suscipit. </p>
+    </div>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis non eos, voluptas dicta quaerat autem, ab, perferendis minus ipsam dolorem vitae quos suscipit. </p>
+    </div>
+</body>
+</html>

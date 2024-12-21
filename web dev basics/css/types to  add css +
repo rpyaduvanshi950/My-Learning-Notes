@@ -1,0 +1,9 @@
+css can be added in three major ways
+    1. inline css writing css inside the tag itself
+    2. internal css writing css inside head tag
+    3. external css adding a external .css file into the html file 
+some more things to remember while writing css
+    1. pref is given to the last css added tag
+    2. to make one css overwrite all others just write !important instinde the semicolon
+    3. inline css >> inside css
+

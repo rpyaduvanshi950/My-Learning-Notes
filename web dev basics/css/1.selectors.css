@@ -1,0 +1,28 @@
+/* this is commentin vs code done by ctrl + /
+selectors:
+    selectors are used to finad the element whose property will be set .
+    selectors are used to target the html element
+    it makes it easy to select one or more html element in the markup
+
+types of selectors
+    element selectors USES element to add css to all the elements like  p{ }
+    id selectors to do specific css  like #id{ } 
+    classs selectors for specific class like .class { }
+    grouping selectors  we group two or more selectors seperated by comma
+more detail are in 1.selectors.html */
+/* element selector */
+h3{
+    color: brown;
+}
+/* id selector */
+#RedElement{
+     color: red;
+}
+/* class selector */
+.yellowback{
+    background-color: yellow;
+}
+/* grouping selector */
+span, footer{
+    color: blue;
+}

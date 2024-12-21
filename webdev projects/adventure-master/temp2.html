@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Example</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .accordion {
+            background-color: #7b69dd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+        }
+        
+        .accordion-item {
+            margin-bottom: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        
+        .accordion-button {
+            background-color: #fff;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .accordion-button::after {
+            content: '+';
+            font-size: 16px;
+        }
+        
+        .accordion-button.active::after {
+            content: '-';
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 15px;
+        }
+        
+        .accordion-content p {
+            margin: 15px 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-button">What is sexual harassment?</button>
+            <div class="accordion-content">
+                <p>Sexual harassment includes unwanted sexual advances, requests for sexual favors, and other verbal or physical harassment of a sexual nature.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">Abuse of position of power</button>
+            <div class="accordion-content">
+                <p>Abuse of power involves using one's position of authority to exploit others.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">Some other criminal offenses</button>
+            <div class="accordion-content">
+                <p>Other offenses can include theft, fraud, assault, etc.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">Commonplace myths about acts of sexual harassment and violence</button>
+            <div class="accordion-content">
+                <p>There are many myths surrounding sexual harassment and violence, often downplaying the severity or reality of these acts.</p>
+            </div>
+        </div>
+    </div>
+    <script >
+        document.querySelectorAll('.accordion-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                button.classList.toggle('active');
+        
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>

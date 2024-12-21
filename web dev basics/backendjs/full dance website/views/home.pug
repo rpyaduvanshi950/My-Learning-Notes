@@ -1,0 +1,59 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+block content
+    //- nav#navbar
+    //-     ul
+    //-         div#logo
+    //-             img(src="/static/logo.avif")
+    //-         li HDA 
+    //-         li #[a(href="/") Home]
+    //-         li #[a(href="/") About]
+    //-         li #[a(href="/") Services]
+    //-         li #[a(href="/") Class Info]
+    //-         li #[a(href="/") Contact Us]
+
+    section#introSection
+        div Welcome to Harry's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Our Mission 
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.webp")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.jpeg")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching faciltiy
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.jpeg")
+
+                div.card-content
+                    p This is the best dance academy of the universe
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors 
+            img(src= "static/img/sponsor1.png", alt= "Sponsor Image", class= "spImage")
+            img(src= "static/img/sponsor2.png", alt="Sponsor Image", class= "spImage")
+            img(src= "static/img/sponsor3.jpeg", alt= "Sponsor Image", class= "spImage")
+            img(src= "static/img/sponsor4.png", alt= "Sponsor Image", class= "spImage")
+            img(src= "static/img/sponsor5.jpeg", alt= "Sponsor Image", class= "spImage")
+            img(src= "static/img/sponsor1.png", alt= "Sponsor Image", class= "spImage")

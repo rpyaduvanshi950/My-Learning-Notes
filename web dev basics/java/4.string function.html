@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string function</title>
+</head>
+<body>
+    <script>
+        var str = "sdgvsd fgsd is aerg adfg aerg are";
+        //loacte a index
+        // first occurence
+        var position = str.indexOf("are")
+        // last occurence
+        position = str.lastIndexOf("is");
+        //substring from a string
+        var substr2= str.slice(1,7);
+        var substr1 = str.substring(1,7);
+        var substr3 = str.substr(1,7);
+        console.log(substr1+substr3+substr2);
+        //replace a string with another one
+        var replaced = str.replace('is', 'are');
+        // to upper case it or lower ccase it
+        str.toUpperCase()
+        str.toLowerCase()
+        // to  concate a string with another 
+        str.concat('new str');
+        // to remove white spaces from front end and backend
+        str.trim()
+        // to know which character is at nth index
+        str.charAt(n);
+        
+    </script>
+</body>
+</html>

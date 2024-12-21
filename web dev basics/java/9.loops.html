@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conatiner">
+        this about loops
+
+    </div>
+    <script>
+        //to iterate array
+        //for loop
+        for(let i =0 ; i<3;i++){
+            console.log(i);
+        }
+        //foreach function
+       let  friends = ['a','b','c'];
+        friends.forEach(function f(element){
+            console.log("hello friend," + element);
+        })
+        //  for of loop
+        for (element of friends){
+            console.log("hello friend," + element);
+        }
+        // to iterate an object
+        let employee = {
+            name : "harry",
+            age:23,
+            year: 2024,
+        }
+// for in loop
+
+        for (key in employee){
+            console.log(`they ${key} of employee is ${employee[key]}`);
+        }
+
+        // while  loop in js
+        let i=0;
+        while(i<4){
+                console.log(`${i} is less than 4`);
+                i++;
+        }
+
+        //do while
+        do{
+            console.log(`${i} is less than 4`);
+            i++;
+        }while(i<4);
+
+    </script>
+</body>
+</html>

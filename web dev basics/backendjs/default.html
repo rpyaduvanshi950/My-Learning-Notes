@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            border: 3px solid black;
+            width: 33%;
+            margin: auto;
+        }
+        .item{
+            border: 2px solid gray;
+            margin: 12px 3px;
+            
+        }
+        /*margin ko auto kr dene se center m aajata h uss direction m*/
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: left;
+            width: 48%;
+        }
+        #stationary{
+            clear: left;
+            width: 100%;
+        }
+        p, h3{
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+            <p id="fruitspara" class="para">
+                Lorem, elit. Accusantium amet quae aut nesciunt corporis omnis perspiciatis rem quibusdam pariatur itaque voluptatibus possimus, reprehenderit quis eaque minima! Praesentium animi tempore recusandae.
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, rem dolorem in ipsa voluptates laboriosam ad commodi quam minus soluta sed amet laborum eveniet autem provident obcaecati iure placeat aspernatur?
+            </p>
+        </div>
+        <div id="fruits" class="item">
+            <h3>stationary</h3>
+            <p id="staionarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatem at facilis ratione repellat amet! Deserunt quo rerum cumque aperiam sed saepe eum sapiente soluta quas, expedita ullam tempore accusantium.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

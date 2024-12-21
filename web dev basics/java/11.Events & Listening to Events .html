@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #btn{
+        padding:10px 14px;
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <!-- Here is a list of some common HTML events-
+
+            Onchange-  An HTML element has been changed
+            Onclick- The user clicks an HTML element
+            Onmouseover-   The user moves the mouse over an HTML element
+            Onmouseout-The user moves the mouse away from an HTML element
+            Onkeydown- The user pushes a keyboard key
+            Onload- The browser has finished loading the page -->
+            <div class="container">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, blanditiis? Quo doloremque laborum reprehenderit. Deleniti!</h3>
+
+                <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus illo a suscipit possimus nobis libero perspiciatis vero vitae cumque, nulla placeat exercitationem id labore minima assumenda. Neque, ab sapiente optio, sed impedit obcaecati exercitationem tenetur laboriosam eum, illum vel? Facere unde eum eaque atque rem voluptatum aspernatur eos nam labore eveniet repellat magnam, dignissimos ut, quibusdam voluptate cumque aliquid veniam dolorem exercitationem tempore, sint officia perspiciatis! Repellat, tempore exercitationem laborum excepturi illum ut cupiditate vel pariatur esse in ratione alias temporibus earum sint saepe incidunt. Nisi doloremque perspiciatis, quod reprehenderit libero sequi. Dolores molestiae mollitia omnis blanditiis modi minima sunt, suscipit maxime harum. Laudantium ipsa accusamus odio perspiciatis quos molestias nisi eos consequatur voluptas inventore hic labore iste aliquam quas, commodi distinctio doloribus, dolor consequuntur enim, architecto quisquam nobis. Vero velit nobis, rerum provident quibusdam fugit. Eaque explicabo saepe illo tempora quo tenetur enim voluptatem aspernatur, fugit dolorum eveniet, omnis iste dignissimos aperiam possimus, dolor doloribus non earum voluptates similique incidunt repellat laudantium facilis nihil. Quas, soluta dicta! Reiciendis, recusandae a. Rerum fugit facere quasi, adipisci laboriosam culpa error aperiam autem voluptate ipsa consectetur voluptatem nulla? Perspiciatis modi quaerat ex dicta impedit est? Deserunt ipsam asperiores illo laboriosam et reiciendis quam adipisci maiores harum possimus commodi saepe voluptatibus, obcaecati inventore, culpa laborum sit fuga nemo excepturi odit eligendi facilis qui. Saepe numquam alias fuga quis nulla! Dicta ipsam expedita at aperiam, est molestiae?</p>
+            </div>
+            <button id="btn" onclick="hide()">
+                hide/show
+            </button>
+    
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log('Mouse Inside')
+        });
+
+        para.addEventListener('mouseout', function run(){
+            console.log('Mouse now went outside')
+        });
+        function hide(){
+            btn=document.getElementById("btn");
+            para=document.getElementById('para');
+            if (para.style.display != 'none'){
+                para.style.display='none';
+            }
+            else{
+                para.style.display='block';
+            }
+        }
+
+    </script>
+</body>
+</html>

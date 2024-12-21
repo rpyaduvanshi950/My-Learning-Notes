@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/elements/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Adventure</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+        <!--
+        CSS
+        ============================================= -->
+        <link rel="stylesheet" href="css/linearicons.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/nice-select.css">			
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+            .container {padding:1em; padding-top: 1em; }
+.region1{color:#333333; background-color:#FFFFFF; font: 1em ariel ; line-height: 1.4em; word-spacing: normal; }
+.content-center-wide{width: 90%; margin: auto;}
+.center{text-align: center; }
+.style-table table,.style-table th{border:1px solid #ccc; border-collapse:collapse; vertical-align:top;}
+.style-table table,.style-table th{table-layout:auto;}
+.style-table table{width:100%; margin-bottom:15px; box-shadow: 2px 2px 5px 1px #ccc;}
+.style-table th, .style-table td{padding:5px 8px;}
+.style-table td{border-width:0 1px;}
+.style-table th{background: #333; color:#FFF; text-align: left; }
+
+.style-table table tr:nth-child(even) td{background: #f2f2f2;}
+.style-table table tr:nth-child(odd) td{}
+
+.style-table1 table,.style-table1 th{border:1px solid #ccc; border-collapse:collapse; vertical-align:top;}
+.style-table1 table,.style-table1 th{table-layout:auto;}
+.style-table1 table{width:100%; margin-bottom:15px; box-shadow: 2px 2px 5px 1px #ccc;}
+.style-table1 th, .style-table1 td {padding:5px 8px;}
+.style-table1 td{border-width:0 1px; }
+.style-table1 th{background: #333; color:#FFF; text-align: left; }
+.style-table1 tr{border:1px solid #eee;}
+.table-link{background: rgba(75,201,255,0.6); border-radius: 3px; color:#fff; padding: 0;}
+.table-link a{padding: 1px;display: block;  text-decoration:none; color:#111;}
+.table-link a:hover{ color:#222;}
+.table-link:hover{background: #fff; border-radius: 3px; }
+
+.table-link-i{float: right; background: #e8e8e8; border-radius: 0px 3px; color:#fff; padding: 0; border: 1px solid #666;}
+.table-link-i a{padding: 0px;padding-left: 4px; padding-right: 4px; display: inline-block;  text-decoration:none; color:blue;}
+.table-link-i a:hover{ color:#222;}
+.table-link-i:hover{background: #fff; border-radius: 3px; }
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 30px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 2vw;
+    overflow: auto;
+    border: 1px solid #888;
+    width: 80%; 
+    height: 75%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+        </style>
+    </head>
+    <body>
+        <!-- Start banner Area -->
+        <section class="generic-banner relative">
+        <!-- Start Header Area -->
+            <header class="default-header">
+                <nav class="navbar navbar-expand-lg  navbar-light">
+                    <div class="container">
+                          <a class="navbar-brand" href="index.html" style="height: 50px;">
+                              <img src="img/logoasc.jpeg" alt=""  style="border-radius: 50%; height: 50px;">
+                          </a>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="text-white lnr lnr-menu"></span>
+                          </button>
+
+                          <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li><a href="index.html#home">Home</a></li>
+                                <li><a href="index.html#about">About</a></li>	
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Explore
+                                    </a>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="TripWritUps.html">Trip Write ups</a>
+                                      <a class="dropdown-item" href="generic.html">History</a>
+                                    </div>
+                                  </li>									
+                                <li><a href="/PastActivitesList.html">Past Treks</a></li>
+                                <li><a href="index.html#gallery">Gallery</a></li>
+                                <li><a href="index.html#faq">Faq</a></li>
+                                <li><a href="/contact.html">Contact</a></li>
+                                <!-- Dropdown -->
+                                <li class="dropdown">
+                                  <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                     Other Pages
+                                  </a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/files/AMS_Manual.pdf">AMS Manual</a>
+                                    <a class="dropdown-item" href="https://climbingiitk.github.io/">Wall Climbing</a>
+                                    <a class="dropdown-item" href="https://indiahikes.com/#gref">India Hikes</a>
+                                    <!-- <a class="dropdown-item" href="elements.html">Past Treks</a> -->
+                                  </div>
+                                </li>
+                            </ul>
+                          </div>						
+                    </div>
+                </nav>
+            </header>
+        <!-- End Header Area -->				
+            <div class="container">
+                <div class="row height align-items-center justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="generic-banner-content">
+                            <h2 class="text-white">Activity Log</h2>
+                            <p class="text-white">Stay updated with the latest activities and events organized by the club, showcasing our ongoing efforts, achievements, and the vibrant participation of our members in every initiative.</p>
+                        </div>							
+                    </div>
+                </div>
+            </div>
+        </section>		
+        <!-- End banner Area -->
+    
+        <main class="container region1">
+            <div class="content-center-wide">
+              <!-- <h1 class="center">Activity Log</h1> -->
+              <div class="style-table content-center-wide">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Activity</th>
+                      <th>Place</th>
+                      <th>Max Altitude</th>
+                      <th>Location</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Cycling</td>
+                      <td>Tawang-Bum La <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Tawang-Bum La', 'itinerary/tawang-march-19.html')">Itinerary</a></span></td>
+                      <td>4170m</td>
+                      <td>AR</td>
+                      <td>March '19</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Kanchenchunga Base Camp <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Kanchenchunga Base Camp', 'itinerary/kanchenchunga-march-19.html')">Itinerary</a></span></td>
+                      <td>5200m</td>
+                      <td>Sikkim</td>
+                      <td>March '19</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Annapurna Base Camp Trek <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Annapurna Base Camp Trek', 'itinerary/annapurna-march-19.html')">Itinerary</a></span></td>
+                      <td>4130m</td>
+                      <td>Nepal</td>
+                      <td>March '19</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Dagala Thousand Lakes <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Dagala Thousand Lakes', 'itinerary/dagala-march-19.html')">Itinerary</a></span></td>
+                      <td>4520m</td>
+                      <td>Bhutan</td>
+                      <td>March '19</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Kedarkantha Trek <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Kedarkantha Trek', 'itinerary/kedarkantha-march-19.html')">Itinerary</a></span></td>
+                      <td>3810m</td>
+                      <td>UK</td>
+                      <td>March '19</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Pin Parvati Trek <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Pin Parvati Trek', 'itinerary/pinparvati-oct-18.html')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>HP</td>
+                      <td>Oct. '18</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Hampta Pass <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Hampta Pass', 'itinerary/hampta-july-18.html')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>HP</td>
+                      <td>July '18</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Pin Bhabha Pass <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Pin Bhabha Pass', 'itinerary/pinbhabha-july-18.html')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>HP</td>
+                      <td>July '18</td>
+                  </tr>
+                  <tr>
+                      <td>Cycling</td>
+                      <td>Manali - Leh - Khardungla <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Manali - Leh - Khardungla', 'itinerary/manali-july-18.html')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>HP and J&amp;K</td>
+                      <td>July '18</td>
+                  </tr>
+                  <tr>
+                      <td>Cycling</td>
+                      <td>Silk Route <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Silk Route', 'itinerary/cycling-march-18.html')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>Sikkim</td>
+                      <td>Feb. '18</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Annapurna Base Camp <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Annapurna Base Camp', 'itinerary/annapurna-march-18.html')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>Nepal</td>
+                      <td>Feb. '18</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Goechala <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Goechala', 'itinerary/goechala-march-18.html')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>Sikkim</td>
+                      <td>Feb. '18</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Chandrashila <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Chandrashila', 'itinerary/chandrashila-march-18.html')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>UK</td>
+                      <td>Feb. '18</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Dayara Bugyal-Dodital <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Dayara Bugyal-Dodital', 'itinerary/dayara-march-18.html')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>UK</td>
+                      <td>Feb. '18</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Friendship Peak <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Friendship Peak', 'itinerary/friendship-oct-17.html')">Itinerary</a></span></td>
+                      <td>5200m</td>
+                      <td>HP</td>
+                      <td>Oct. '17</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Har Ki Dun <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Har Ki Dun', 'writeups/har_ki_dun.html')">Blog - Itinerary</a></span></td>
+                      <td>3566m</td>
+                      <td>UK</td>
+                      <td>Oct. '17</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Dodital <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Dodital', 'itinerary/dodital-july-17.html')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>UK</td>
+                      <td>July '17</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Vasuki Tal <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Vasuki Tal', 'itinerary/vasuki-july-17.html')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>UK</td>
+                      <td>July '17</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>HMI Base Camp <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('HMI Base Camp', 'itinerary/hmi-march-17.html')">Itinerary</a></span></td>
+                      <td>4600m</td>
+                      <td>Sikkim</td>
+                      <td>March '17</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Druk Path <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Druk Path', 'itinerary/druk-march-17.html')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>Bhutan</td>
+                      <td>March '17</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Sandakphu <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Sandakphu', 'itinerary/sandakphu-march-17.html')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>West Bengal</td>
+                      <td>March '17</td>
+                  </tr>
+                  <tr>
+                      <td>Cycling</td>
+                      <td>Kinnaur and Spiti Valley <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Kinnaur and Spiti Valley', '')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>HP</td>
+                      <td>Oct. '16</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Bagini Glacier <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Bagini Glacier', '')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>UK</td>
+                      <td>Oct. '16</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Roopkund <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Roopkund', '')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>UK</td>
+                      <td>Oct. '16</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Bada Bangal <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Bada Bangal', '')">Itinerary</a></span></td>
+                      <td></td>
+                      <td>HP</td>
+                      <td>Oct. '16</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Makha Valley <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Makha Valley', '')">Itinerary</a></span></td>
+                      <td>5150m</td>
+                      <td>Ladakh</td>
+                      <td>July '16</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Parang La Pass <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Parang La Pass', '')">Itinerary</a></span></td>
+                      <td>5600m</td>
+                      <td>Ladakh</td>
+                      <td>July '16</td>
+                  </tr>
+                  <tr>
+                      <td>Cycling</td>
+                      <td>Yuksom <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Yuksom', '')">Itinerary</a></span></td>
+                      <td>4200m</td>
+                      <td>Sikkim</td>
+                      <td>March '16</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Guecha La <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Guecha La', '')">Itinerary</a></span></td>
+                      <td>4900m</td>
+                      <td>Sikkim</td>
+                      <td>March '16</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Changsheel Meadows <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Changsheel Meadows', '')">Itinerary</a></span></td>
+                      <td>4500m</td>
+                      <td>UK</td>
+                      <td>March '16</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Baraadsar <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Baraadsar', '')">Itinerary</a></span></td>
+                      <td>4400m</td>
+                      <td>UK</td>
+                      <td>March '16</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Lamkhaga Pass <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Lamkhaga Pass', '')">Itinerary</a></span></td>
+                      <td>5282m</td>
+                      <td>HP</td>
+                      <td>Oct. '15</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Nandikund Pass <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Nandikund Pass', '')">Itinerary</a></span></td>
+                      <td>4799m</td>
+                      <td>UK</td>
+                      <td>Oct. '15</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Rupin Pass <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Rupin Pass', '')">Itinerary</a></span></td>
+                      <td>4650m</td>
+                      <td>HP</td>
+                      <td>Oct. '15</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Humpta Pass <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Humpta Pass', '')">Itinerary</a></span></td>
+                      <td>4280m</td>
+                      <td>HP</td>
+                      <td>July '15</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Pin Parvati <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Pin Parvati', '')">Itinerary</a></span></td>
+                      <td>5320m</td>
+                      <td>HP</td>
+                      <td>July '15</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Tapovan <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Tapovan', '')">Itinerary</a></span></td>
+                      <td></td>
+                      <td></td>
+                      <td>May '06</td>
+                  </tr>
+                  <tr>
+                      <td>Cycling</td>
+                      <td>Spiti <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Spiti', '')">Itinerary</a></span></td>
+                      <td></td>
+                      <td></td>
+                      <td>March '06</td>
+                  </tr>
+                  <tr>
+                      <td>Skiing</td>
+                      <td>DMAS, Manali <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('DMAS, Manali', '')">Itinerary</a></span></td>
+                      <td></td>
+                      <td></td>
+                      <td>March '06</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Khatling Glacier <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Khatling Glacier', 'writeups/khatling_writeup.html')">Blog</a></span></td>
+                      <td></td>
+                      <td></td>
+                      <td>Oct. '05</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Goecha La (Sikkim) <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Goecha La (Sikkim)', 'writeups/goecha-la.html')">Blog</a></span></td>
+                      <td></td>
+                      <td></td>
+                      <td>May '05</td>
+                  </tr>
+                  <tr>
+                      <td>Mountain Cycling</td>
+                      <td>Kinnaur n Spiti <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Kinnaur n Spiti', 'writeups/kinnaur_spiti1.html')">Blog</a></span></td>
+                      <td></td>
+                      <td></td>
+                      <td>March '05</td>
+                  </tr>
+                  <tr>
+                      <td>Trek</td>
+                      <td>Nanda Devi East Base Camp <span class="table-link-i hover-shadow"><a href="#" onclick="openModal('Nanda Devi East Base Camp', 'writeups/nanda_devi_east_blog.html')">Blog</a></span></td>
+                      <td></td>
+                      <td></td>
+                      <td>May '03</td>
+                  </tr>          
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </main>
+        
+          <!-- Modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <div id="modal-body">Loading...</div>
+            </div>
+          </div>
+
+        <!-- start footer Area -->		
+        <footer class="footer-area section-gap">
+            <div class="container">
+                <div class="row">
+                    <!-- About Us Section -->
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>About Us</h6>
+                            <p>
+                                The Adventure Sports Club is all about pushing boundaries, exploring the unknown, and embracing the thrill of adventure. From trekking to rock climbing, we bring together enthusiasts who love the outdoors and seek unforgettable experiences.
+                            </p>
+                            <p class="footer-text">
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Adventure Sports Club
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>Other IITK's Links</h6>
+                            <ul>
+                                <li><a href="https://www.iitk.ac.in/" style="color: white;">IITK Homepage</a></li>
+                                <li><a href="https://spazewalker.github.io/gnsiitk/clubs.html"style="color: white;">Games and Sports Council</a></li>
+                                <li><a href="https://students.iitk.ac.in/gymkhana/"style="color: white;">Students Gymkhana</a></li>
+                                <!-- <li><a href="#"></a></li> -->
+                                <!-- <li><a href="#">Contact Support</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Follow Us Section -->
+                    <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+                        <div class="single-footer-widget">
+                            <h6>Follow Us</h6>
+                            <p>Let’s connect and share the adventure!</p>
+                            <div class="footer-social d-flex align-items-center">
+                                <a href="https://www.facebook.com/adventureclubiitk/"><i class="fa fa-facebook"></i></a>
+                                <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+                                <a href="https://www.instagram.com/adventuresportsclubiitk?igsh=NXVid2U4ZWJkcWVo "><i class="fa fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/adventureclubiitk/"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>	
+        <!-- End footer Area -->		
+
+    </div>
+    <script>
+    
+        function openModal(title, url) {
+          const modalBody = document.getElementById('modal-body');
+          modalBody.innerHTML = `<h2>${title}</h2><iframe src="${url}" style="width:100%; height:300px;" frameborder="0"></iframe>`;
+          document.getElementById('myModal').style.display = "block";
+        }
+    
+        function closeModal() {
+          document.getElementById('myModal').style.display = "none";
+          document.getElementById('modal-body').innerHTML = "Loading..."; // Reset content
+        }
+    
+        window.onclick = function(event) {
+          const modal = document.getElementById('myModal');
+          if (event.target == modal) {
+            closeModal();
+          }
+        };
+      </script>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

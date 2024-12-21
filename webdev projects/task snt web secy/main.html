@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskmaster</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7ba2c8732f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <!-- left box for logo  -->
+            <div class="left">
+                <img src="logo.png" alt="logo" id="">
+                <div>Taskmaster</div>
+            </div>
+            <!-- mid for navbar  -->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" >Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#" >Services</a></li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- right for buttons -->
+            <div class="right">
+                <button class="btn" id="signinbtn" onclick="myFunction()">Sign In</button>
+                <button class="btn" id="signupbtn" onclick="myFunction()">Sign Up</button>
+            </div>
+        </header>
+        <div class="form_box">
+            <h1 id="tittle">Sign Up</h1>
+            <form id="login-form" >
+                <div class="input_group">
+                    <div class="input-field"  id="namefield">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name" name="name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Email" name="email" id="email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" placeholder="Password"  name="password" id="password">
+                    </div> 
+                    <p><a href="#">Forget Password</a></p> 
+                </div>
+                <div class="btn-field">
+                    <button type="submit" id="disappear1" >Enter</button>
+                </div>
+            </form>
+        </div>
+    </div> 
+    <script>
+        let signupbtn = document.getElementById("signupbtn");
+        let signinbtn = document.getElementById("signinbtn");
+        let namefield= document.getElementById("namefield");
+        let tittle = document.getElementById("tittle");      
+
+        signinbtn.onclick = function(){
+            namefield.style.maxHeight="0";
+            tittle.innerHTML ="Sign In";
+            
+        }
+        signupbtn.onclick = function(){
+            namefield.style.maxHeight="60px";
+            tittle.innerHTML ="Sign Up";
+        }
+        
+// dummy authentication data
+const users = [
+    { id: 1, email: "user1@example.com", password: "passuser1" },
+    { id: 2, email: "user2@example.com", password: "passuser2" }
+];
+
+// login functionality
+document.getElementById("login-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const user = users.find((user) => user.email === email && user.password === password);
+    if (user) {
+        localStorage.setItem("userId", user.id);
+       window.location.href = "home1.html";
+    } else {
+        document.getElementById("error-message").innerHTML = "Invalid email or password";
+    }
+});
+    </script>   
+</body>
+</html>
