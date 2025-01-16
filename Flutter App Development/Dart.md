@@ -1,138 +1,85 @@
-```markdown
-# Dart Class Naming Rules
+### Dart Class Naming Rules
 
-1. **Class Name Should Start with an Uppercase Letter**  
-   Class names must begin with an uppercase letter (e.g., `MyClass`).
+1. **Start with an Uppercase Letter**:  
+   Class names should begin with an uppercase letter (e.g., `MyClass`).
 
-2. **Use CamelCase**  
+2. **Use Camel Case**:  
    Class names should follow **CamelCase**, where each subsequent word starts with an uppercase letter (e.g., `MyClassName`).
 
-3. **Avoid Using Reserved Keywords**  
-   Dart keywords (e.g., `class`, `var`, `int`) cannot be used as class names.
+3. **Avoid Reserved Keywords**:  
+   Dart keywords like `class`, `var`, and `int` cannot be used as class names.
 
-4. **Class Name Should Be Descriptive**  
-   Choose a name that describes the purpose or role of the class (e.g., `Car`, `Person`, `BankAccount`).
+4. **Descriptive Class Names**:  
+   Choose class names that describe their purpose or role (e.g., `Car`, `Person`, `BankAccount`).
 
-5. **No Special Characters**  
-   Class names can contain letters, numbers, and underscores but cannot start with a number.
+5. **No Special Characters**:  
+   Class names can only contain letters, numbers, and underscores but cannot start with a number.
 
-6. **Avoid Using Spaces**  
-   Do not use spaces in class names.
+6. **No Spaces**:  
+   Class names must not contain spaces.
 
-7. **Use Singular Form**  
-   Class names are typically singular, representing a single instance (e.g., `Student` instead of `Students`).
+7. **Use Singular Form**:  
+   Class names should generally be singular (e.g., `Student` rather than `Students`), representing a single instance.
 
 ---
 
-# Dart Data Types and Variables
+### Dart Variables and Data Types
 
-Dart is a **strongly typed language**, meaning variables must be declared with a type or inferred by Dart’s type inference system. Here's an overview of Dart's data types:
+Dart is a **strongly typed language**, meaning variables must be declared with a type or inferred by Dart's type inference system. Here's an overview of Dart data types and variable handling:
 
-### 1. **Primitive Data Types**
+#### 1. **Primitive Data Types**
 
-- **int**: Represents whole numbers.
-  ```dart
-  int age = 25;
-  ```
+- **int**: Represents whole numbers (e.g., `int age = 25;`)
+- **double**: Represents decimal numbers (e.g., `double price = 99.99;`)
+- **String**: Represents text (e.g., `String name = 'Alice';`)
+- **bool**: Represents a boolean value (`true` or `false) (e.g., `bool isActive = true;`)
+- **var**: Dart infers the type based on the value (e.g., `var message = 'Hello';`)
+- **dynamic**: A variable that can change type at runtime (e.g., `dynamic value = 5;`)
 
-- **double**: Represents decimal numbers.
-  ```dart
-  double price = 99.99;
-  ```
+#### 2. **Null Safety**
 
-- **String**: Represents a sequence of characters.
-  ```dart
-  String name = 'Alice';
-  ```
+Dart supports **null safety**, ensuring variables cannot be assigned `null` unless explicitly allowed:
 
-- **bool**: Represents a boolean value (`true` or `false`).
-  ```dart
-  bool isActive = true;
-  ```
+- To allow a variable to be nullable, use `?` (e.g., `int? nullableInt = null;`).
+- Non-nullable variables must be initialized with a value.
 
-- **var**: A special type that infers the type based on the assigned value.
-  ```dart
-  var message = 'Hello, World!'; // Inferred as String
-  ```
+#### 3. **Collection Types**
 
-- **dynamic**: Represents a type that can change at runtime.
-  ```dart
-  dynamic value = 5;
-  value = 'Now I am a string';
-  ```
+- **List**: An ordered collection of items (e.g., `List<int> numbers = [1, 2, 3];`).
+- **Set**: A collection of unique items with no duplicates (e.g., `Set<String> uniqueNames = {'Alice', 'Bob'};`).
+- **Map**: A collection of key-value pairs (e.g., `Map<String, int> grades = {'Alice': 90};`).
 
-### 2. **Null Safety in Dart**
+#### 4. **Constants and Final Variables**
 
-Dart supports **null safety**, ensuring variables can't hold a `null` value unless explicitly allowed.
+- **final**: A variable that can only be set once, initialized at runtime (e.g., `final int age = 30;`).
+- **const**: A compile-time constant whose value must be known at compile time (e.g., `const pi = 3.14159;`).
 
-- Nullable types use `?`:
-  ```dart
-  int? nullableInt = null;  // Can be null
-  String? nullableString = 'Hello';  // Can be null
-  ```
-
-- Non-nullable types must be initialized with a non-null value.
-
-### 3. **Collection Types**
-
-Dart supports several collection types:
-
-- **List**: A collection of ordered items (like an array).
-  ```dart
-  List<int> numbers = [1, 2, 3, 4];
-  List<String> fruits = ['Apple', 'Banana'];
-  ```
-
-- **Set**: A collection of unique items.
-  ```dart
-  Set<String> uniqueNames = {'Alice', 'Bob', 'Charlie'};
-  ```
-
-- **Map**: A collection of key-value pairs.
-  ```dart
-  Map<String, int> studentGrades = {'Alice': 90, 'Bob': 85};
-  ```
-
-### 4. **Constants and Final Variables**
-
-- **final**: A variable that can only be set once, initialized at runtime.
-  ```dart
-  final int age = 30;
-  ```
-
-- **const**: A compile-time constant whose value must be known at compile time.
-  ```dart
-  const pi = 3.14159;
-  ```
-
-### 5. **Type Inference**
+#### 5. **Type Inference**
 
 Dart can infer the type of a variable based on its initial value:
 
 ```dart
-var name = 'Alice';  // Inferred as String
-var number = 10;     // Inferred as int
+var name = 'Alice';  // inferred as String
+var age = 25;        // inferred as int
 ```
 
-You can also explicitly specify types:
+Alternatively, you can explicitly specify the type:
+
 ```dart
 String name = 'Alice';
-int number = 10;
+int age = 25;
 ```
 
-### 6. **Type Aliases (Optional)**
+#### 6. **Type Aliases**
 
-Dart allows creating custom type aliases using `typedef`:
+Dart allows custom type aliases using the `typedef` keyword. This is useful for function signatures:
 
 ```dart
 typedef IntList = List<int>;
-
 IntList numbers = [1, 2, 3];
 ```
 
----
-
-# Summary of Data Types
+### Summary of Dart Data Types
 
 - **Numeric Types**: `int`, `double`
 - **Text Type**: `String`
@@ -142,9 +89,7 @@ IntList numbers = [1, 2, 3];
 - **Nullable Types**: Use `?` to denote nullable types (e.g., `int?`)
 - **Constants**: `final` (runtime constant), `const` (compile-time constant)
 
----
-
-# Example Usage
+### Example Usage
 
 ```dart
 void main() {
@@ -153,7 +98,7 @@ void main() {
   String name = 'Alice';
   bool isActive = true;
   
-  var city = 'London';  // Dart infers String
+  var city = 'London'; // Dart infers String
   
   // List
   List<String> fruits = ['Apple', 'Banana', 'Cherry'];
@@ -168,5 +113,4 @@ void main() {
 }
 ```
 
-Dart offers a variety of data types and flexible ways to handle variables, making it a powerful language for handling different data types in programs.
-```
+Dart's data types provide flexibility in variable declaration, allowing developers to work with various data forms in a robust and type-safe manner.
