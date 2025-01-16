@@ -114,3 +114,41 @@ void main() {
 ```
 
 Dart's data types provide flexibility in variable declaration, allowing developers to work with various data forms in a robust and type-safe manner.
+
+In Dart, both `var` and `dynamic` are used to declare variables, but they have distinct differences in terms of how types are handled:
+
+### 1. **`var`**:  
+- **Type Inference**: When you declare a variable with `var`, Dart infers its type at the time of initialization based on the assigned value.  
+- **Fixed Type After Initialization**: Once a variable is assigned a type (inferred from the initial value), it cannot change to a different type. This means that after Dart infers the type, the variable’s type becomes fixed for the rest of the program.  
+- **Type Safety**: Since the type is inferred and fixed, Dart will enforce type safety. If you try to assign a different type later, it will result in a compile-time error.
+
+**Example with `var`:**
+```dart
+var name = 'Alice';  // Dart infers the type as String
+name = 42;           // Error: A value of type 'int' can't be assigned to a variable of type 'String'
+```
+
+### 2. **`dynamic`**:  
+- **No Type Inference**: The `dynamic` type does not infer the type at compile time. You can assign any type of value to a variable declared as `dynamic`.  
+- **Flexible and Unchecked**: Since `dynamic` allows variables to change types during runtime, Dart does not perform type checking on these variables. This can lead to runtime errors if you perform operations that are not compatible with the actual value of the variable.  
+- **Not Type-Safe**: With `dynamic`, the type safety checks are deferred to runtime, and there is no compile-time checking.
+
+**Example with `dynamic`:**
+```dart
+dynamic name = 'Alice';  // Initially a String
+name = 42;               // No error, now it's an int
+name = true;             // No error, now it's a bool
+```
+
+### Key Differences
+
+| Feature           | `var`                                      | `dynamic`                                |
+|-------------------|--------------------------------------------|------------------------------------------|
+| **Type Inference** | Type is inferred based on the initial value. | No type inference; you can assign any type. |
+| **Type Safety**    | Type is fixed after initialization.        | No type safety; type checks happen at runtime. |
+| **Usage**          | Use when the type is known and will not change. | Use when the type can vary or is not known ahead of time. |
+| **Error Detection**| Errors are caught at compile-time.         | Errors are caught at runtime.            |
+
+### Summary
+- Use `var` when the type can be inferred and remains constant.
+- Use `dynamic` when the type is flexible and can change at runtime. However, this sacrifices type safety and defers type checking to runtime.
