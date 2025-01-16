@@ -121,11 +121,16 @@ In Dart, both `var` and `dynamic` are used to declare variables, but they have d
 - **Type Inference**: When you declare a variable with `var`, Dart infers its type at the time of initialization based on the assigned value.  
 - **Fixed Type After Initialization**: Once a variable is assigned a type (inferred from the initial value), it cannot change to a different type. This means that after Dart infers the type, the variable’s type becomes fixed for the rest of the program.  
 - **Type Safety**: Since the type is inferred and fixed, Dart will enforce type safety. If you try to assign a different type later, it will result in a compile-time error.
+- **Uninitialized Variables**: If a variable is declared with `var` but not initialized, Dart implicitly treats it as having a `dynamic` type. This allows the variable to later be assigned any type.
 
 **Example with `var`:**
 ```dart
 var name = 'Alice';  // Dart infers the type as String
 name = 42;           // Error: A value of type 'int' can't be assigned to a variable of type 'String'
+
+var uninitialized;   // Dart infers this as dynamic
+uninitialized = 'Hello'; // It's a String now
+uninitialized = 10;     // It's an int now
 ```
 
 ### 2. **`dynamic`**:  
@@ -144,11 +149,11 @@ name = true;             // No error, now it's a bool
 
 | Feature           | `var`                                      | `dynamic`                                |
 |-------------------|--------------------------------------------|------------------------------------------|
-| **Type Inference** | Type is inferred based on the initial value. | No type inference; you can assign any type. |
+| **Type Inference** | Type is inferred based on the initial value, or `dynamic` if uninitialized. | No type inference; you can assign any type. |
 | **Type Safety**    | Type is fixed after initialization.        | No type safety; type checks happen at runtime. |
 | **Usage**          | Use when the type is known and will not change. | Use when the type can vary or is not known ahead of time. |
 | **Error Detection**| Errors are caught at compile-time.         | Errors are caught at runtime.            |
 
 ### Summary
-- Use `var` when the type can be inferred and remains constant.
+- Use `var` when the type can be inferred and remains constant. If you don't initialize it, Dart treats it as `dynamic`.
 - Use `dynamic` when the type is flexible and can change at runtime. However, this sacrifices type safety and defers type checking to runtime.
