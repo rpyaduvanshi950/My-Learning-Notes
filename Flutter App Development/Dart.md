@@ -157,3 +157,55 @@ name = true;             // No error, now it's a bool
 ### Summary
 - Use `var` when the type can be inferred and remains constant. If you don't initialize it, Dart treats it as `dynamic`.
 - Use `dynamic` when the type is flexible and can change at runtime. However, this sacrifices type safety and defers type checking to runtime.
+
+
+
+Functions in Dart are used to reduce redundancy and increase reusability of code.
+- Functions or methods are found in most programming languages and reduce redundancy by increasing the reusability of the function in the class.
+- Function declaration, function definition, and function calling are key aspects of using functions in Dart for code reusability.
+
+Functions need unique names and can be declared and called within a class
+- Functions can be declared within a class or outside
+- Functions are called by using the function name and can be used for code reusability
+
+Functions are used to avoid repetitive code and can be called with different values.
+- Functions are created to use a piece of code multiple times with different values.
+- Functions can take parameters to customize the behavior and output.
+
+Functions in Dart enable code reusability.
+- Functions store and execute repetitive code.
+- Functions can be called multiple times with different inputs.
+
+Functions with return types other than void must have a return statement at the end.
+- The return statement must be the last statement in the function.
+- The code written after the return statement becomes unreachable.
+
+Understanding function calling, compilation, and return statements in Dart.
+- The process of function calling and code compilation by the compiler.
+- Explanation of void and explicit return statements in function definitions.
+
+Functions can have optional and named arguments
+- Functions in Dart can have optional and named arguments, which can be used as per the requirement.
+- Creating and using functions can help in minimizing redundancy and simplifying the code.
+
+Functions in Dart serve various purposes like constructors and init blocks
+- Constructors are special functions with the same name as the class, do not return anything, and have a default constructor created automatically
+- The init block can be used to execute code at the time of class creation, and understanding functions in Dart is essential for Flutter development
+
+
+### Example of a Function in Dart:
+
+```dart
+// Function to calculate the sum of two numbers
+int sum(int a, int b) {
+  return a + b;  // Return statement gives the sum of 'a' and 'b'
+}
+
+void main() {
+  int result = sum(5, 3);  // Function call with 5 and 3 as arguments
+  print("The sum is: $result");
+}
+```
+
+In this example, the function `sum` takes two parameters (`int a` and `int b`), adds them together, and returns the result. The `main` function calls `sum` with arguments `5` and `3`, and then prints the sum.
+
