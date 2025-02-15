@@ -7,6 +7,31 @@
 - **Rows**: Used for horizontal alignment of widgets.
 - **Columns**: Used for vertical alignment of widgets.
 - Both widgets allow you to mix various types of widgets within them, offering flexible layout designs based on your app's needs.
+- You can add any type of widget in them unless you have defined the widget beforehanded for example:
+- in this we can add any type of the widgets in the list:
+```dart
+Column(
+  mainAxisAlignment: MainAxisAlignment.center,   // Align items vertically in the center
+  crossAxisAlignment: CrossAxisAlignment.start,  // Align items horizontally at the start
+  children: [
+    Text("Flutter"),
+    Text("is"),
+    Text("Awesome"),
+  ],
+)
+```
+- in the below as i have predefined the widget as Text so i can only add text widgets
+```dart
+Column(
+  mainAxisAlignment: MainAxisAlignment.center,   // Align items vertically in the center
+  crossAxisAlignment: CrossAxisAlignment.start,  // Align items horizontally at the start
+  children: <Text>[
+    Text("Flutter"),
+    Text("is"),
+    Text("Awesome"),
+  ],
+)
+```
 
 ### **Main and Cross Axis in Rows and Columns:**
 - **Main Axis**:
