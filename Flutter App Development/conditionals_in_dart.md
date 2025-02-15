@@ -1,5 +1,3 @@
-**Summary of "What is Conditional Programming (Hindi)-Flutter Dart Programming" by Merlin AI**
-
 **Conditional Programming Overview:**
 - Conditional programming allows the code to execute different actions based on specific conditions.
 - For instance, a login page might trigger different outcomes depending on whether the username and password are correct.
