@@ -63,6 +63,8 @@ vector<int> v3(v2);     // Copy of v2
 vector<int>::iterator it = v.begin();
 cout << *(it) << endl;
 
+
+
 for (auto it = v.begin(); it != v.end(); ++it)
     cout << *it << " ";
 
