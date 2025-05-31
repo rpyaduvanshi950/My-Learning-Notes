@@ -1,10 +1,12 @@
+
+
 ## 🔹 **1. Introduction to C++ STL**
 
-* **STL** stands for **Standard Template Library** and consists of:
+The **Standard Template Library (STL)** is a powerful set of C++ template classes to provide common data structures and functions:
 
-  * **Containers** – Store collections of data (e.g., `vector`, `set`)
-  * **Algorithms** – Provide functionality (e.g., `sort`, `binary_search`)
-  * **Iterators** – Objects that point to elements in containers
+* **Containers** – Store collections of data (`vector`, `list`, `map`, etc.)
+* **Algorithms** – Functions to process data (`sort`, `binary_search`, etc.)
+* **Iterators** – Used to access elements in containers
 
 ```cpp
 #include <bits/stdc++.h>
@@ -15,141 +17,151 @@ using namespace std;
 
 ## 🔹 **2. Pair and Nested Pair**
 
-### ✅ Syntax:
+### 🔧 What is it?
+
+Stores two heterogeneous objects as a single unit.
+
+### ✅ Syntax and Functions:
 
 ```cpp
 pair<int, int> p = {1, 2};
-cout << p.first << " " << p.second << endl;
+cout << p.first << " " << p.second;
 
-pair<int, pair<int, int>> nested = {1, {2, 3}};
-cout << nested.first << " " << nested.second.first << " " << nested.second.second << endl;
+pair<int, pair<int, int>> np = {1, {2, 3}};
 ```
-
-### 💡 Use-case:
-
-* Useful in problems requiring associations like coordinates, graphs, etc.
 
 ---
 
-## 🔹 **3. Vectors and Dynamic Arrays**
+## 🔹 **3. Vector – Dynamic Array**
 
-### ✅ Syntax:
+### 🔧 What is it?
+
+Resizes automatically. Fast access & insertion at the end.
+
+### ✅ Common Functions:
 
 ```cpp
-vector<int> v; // Empty vector
-v.push_back(10);
-v.emplace_back(20); // Faster than push_back
-
-vector<pair<int, int>> vp;
-vp.push_back({1, 2});
-vp.emplace_back(3, 4);
-
-vector<int> v2(5, 100); // 5 elements with value 100
-vector<int> v3(v2);     // Copy of v2
+vector<int> v;
+v.push_back(x);      // Add at end
+v.emplace_back(x);   // Faster insertion
+v.size();            // Number of elements
+v.clear();           // Remove all
+v.empty();           // Is empty?
+v.erase(pos);        // Remove at pos
+v.insert(pos, x);    // Insert at pos
+v.front();           // First element
+v.back();            // Last element
+v[i];                // Access element
 ```
-
-### 🧠 Notes:
-
-* Vectors grow dynamically.
-* Access via index `v[i]` or iterator.
 
 ---
 
 ## 🔹 **4. Iterators**
 
+### 🔧 What is it?
+
+Pointer-like objects to traverse containers.
+
 ### ✅ Syntax:
 
 ```cpp
 vector<int>::iterator it = v.begin();
-cout << *(it) << endl;
+it++; *it;           // Dereferencing
+v.begin(), v.end();  // Start, end
 
-
-
-for (auto it = v.begin(); it != v.end(); ++it)
-    cout << *it << " ";
-
-for (auto x : v)  // Range-based loop
-    cout << x << " ";
+for (auto x : v) cout << x; // Range-based
 ```
 
 ---
 
-## 🔹 **5. Modifying Vectors**
+## 🔹 **5. List – Doubly Linked List**
 
-### ✅ Syntax:
+### 🔧 What is it?
 
-```cpp
-v.erase(v.begin() + 1);  // Delete element at index 1
-v.erase(v.begin(), v.begin() + 3); // Delete range [1, 3)
+Efficient insertions/deletions anywhere, but no indexing.
 
-v.insert(v.begin(), 300);           // Insert 300 at front
-v.insert(v.begin() + 1, 2, 10);     // Insert 2 copies of 10
-v.pop_back();                       // Remove last element
-v.clear();                          // Remove all elements
-v.empty();                          // Check if vector is empty
-```
-
----
-
-## 🔹 **6. List and Deque**
-
-### ✅ Syntax:
+### ✅ Functions:
 
 ```cpp
 list<int> ls;
-ls.push_back(1);
-ls.push_front(2);
-
-deque<int> dq;
-dq.push_back(1);
-dq.push_front(2);
-dq.pop_back();
+ls.push_back(x);
+ls.push_front(x);
+ls.pop_back();
+ls.pop_front();
+ls.sort();           // Sort list
+ls.reverse();        // Reverse order
 ```
-
-### 💡 Notes:
-
-* `list` and `deque` allow efficient insertions/deletions at both ends.
-* `list` doesn't support random access (no indexing).
 
 ---
 
-## 🔹 **7. Stack (LIFO)**
+## 🔹 **6. Deque – Double Ended Queue**
 
-### ✅ Syntax:
+### 🔧 What is it?
+
+Allows push/pop at both ends efficiently.
+
+### ✅ Functions:
+
+```cpp
+deque<int> dq;
+dq.push_back(x);
+dq.push_front(x);
+dq.pop_back();
+dq.pop_front();
+dq.front(), dq.back();
+```
+
+---
+
+## 🔹 **7. Stack – LIFO**
+
+### 🔧 What is it?
+
+Last-In-First-Out structure.
+
+### ✅ Functions:
 
 ```cpp
 stack<int> st;
-st.push(1);
-st.push(2);
-cout << st.top();  // 2
-st.pop();          // Removes top
+st.push(x);
+st.top();    // Access top
+st.pop();    // Remove top
+st.empty();  // Is empty?
 ```
 
 ---
 
-## 🔹 **8. Queue (FIFO)**
+## 🔹 **8. Queue – FIFO**
 
-### ✅ Syntax:
+### 🔧 What is it?
+
+First-In-First-Out structure.
+
+### ✅ Functions:
 
 ```cpp
 queue<int> q;
-q.push(1);
-q.push(2);
-cout << q.front();  // 1
-q.pop();
+q.push(x);
+q.front();   // Access front
+q.pop();     // Remove front
+q.empty();
 ```
 
 ---
 
-## 🔹 **9. Priority Queue (Max-Heap by default)**
+## 🔹 **9. Priority Queue**
 
-### ✅ Syntax:
+### 🔧 What is it?
+
+Max-heap by default. Highest priority at top.
+
+### ✅ Functions:
 
 ```cpp
 priority_queue<int> pq;
-pq.push(10);
-pq.push(5);
-cout << pq.top();  // 10
+pq.push(x);
+pq.top();    // Max element
+pq.pop();
 
 // Min-heap:
 priority_queue<int, vector<int>, greater<int>> minpq;
@@ -157,118 +169,163 @@ priority_queue<int, vector<int>, greater<int>> minpq;
 
 ---
 
-## 🔹 **10. Set and Multiset (Sorted Unique Elements)**
+## 🔹 **10. Set – Sorted Unique Elements**
 
-### ✅ Syntax:
+### 🔧 What is it?
+
+Stores unique elements in sorted order.
+
+### ✅ Functions:
 
 ```cpp
 set<int> s;
-s.insert(1);
-s.insert(2);
-s.erase(1);
-auto it = s.find(2);
-cout << *it;
-
-s.count(2); // returns 1 if exists
-
-s.lower_bound(2);
-s.upper_bound(2);
+s.insert(x);
+s.erase(x);
+s.find(x);
+s.count(x);          // 0 or 1
+s.lower_bound(x);    // >= x
+s.upper_bound(x);    // > x
+s.size(); s.empty();
 ```
-
-### 🧠 Time Complexity:
-
-* Insertion, Deletion, Search: O(log n)
 
 ---
 
-## 🔹 **11. Unordered Set**
+## 🔹 **11. Multiset – Sorted Duplicates Allowed**
 
-### ✅ Syntax:
+### 🔧 What is it?
+
+Like set but allows duplicates.
+
+### ✅ Functions:
+
+```cpp
+multiset<int> ms;
+ms.insert(x);
+ms.erase(ms.find(x));  // Erases one occurrence
+```
+
+---
+
+## 🔹 **12. Unordered Set – Hash Table**
+
+### 🔧 What is it?
+
+Faster than `set` on average. No order, unique elements.
+
+### ✅ Functions:
 
 ```cpp
 unordered_set<int> us;
-us.insert(1);
-us.find(1);
+us.insert(x);
+us.find(x);
+us.count(x);
 ```
-
-### 🧠 Time Complexity:
-
-* Average: O(1), Worst: O(n)
 
 ---
 
-## 🔹 **12. Map and Unordered Map**
+## 🔹 **13. Map – Key-Value Pairs (Ordered)**
 
-### ✅ Syntax:
+### 🔧 What is it?
+
+Associative array. Keys sorted.
+
+### ✅ Functions:
 
 ```cpp
 map<string, int> mp;
-mp["abc"] = 1;
-mp.insert({"def", 2});
-cout << mp["abc"];  // 1
-mp.erase("abc");
-mp.find("def");
+mp["a"] = 1;
+mp.insert({"b", 2});
+mp.erase("a");
+mp.find("b");
+mp.count("b");
+mp.size();
+```
 
+---
+
+## 🔹 **14. Unordered Map – Hash Table**
+
+### 🔧 What is it?
+
+Like map but faster (average O(1)), keys not sorted.
+
+### ✅ Functions:
+
+```cpp
 unordered_map<string, int> ump;
+ump["a"] = 10;
+ump.find("a");
+ump.erase("a");
 ```
 
 ---
 
-## 🔹 **13. Sorting and Comparators**
+## 🔹 **15. Algorithms**
 
-### ✅ Simple Sort:
+### ✅ Useful Functions:
 
 ```cpp
-vector<int> a = {3, 1, 2};
-sort(a.begin(), a.end()); // Ascending
+sort(v.begin(), v.end());           // Ascending
+reverse(v.begin(), v.end());
+max_element(v.begin(), v.end());
+min_element(v.begin(), v.end());
+accumulate(v.begin(), v.end(), 0);  // Sum
+count(v.begin(), v.end(), x);
+find(v.begin(), v.end(), x);
+binary_search(v.begin(), v.end(), x);
 ```
 
-### ✅ Sort with Comparator:
+---
+
+## 🔹 **16. Custom Sorting with Comparator**
 
 ```cpp
-bool comp(pair<int, int> a, pair<int, int> b) {
+bool comp(pair<int,int> a, pair<int,int> b){
     if (a.second == b.second)
-        return a.first > b.first;  // Descending first if second equal
-    return a.second < b.second;    // Ascending second
+        return a.first > b.first;
+    return a.second < b.second;
 }
-sort(vp.begin(), vp.end(), comp);
+sort(v.begin(), v.end(), comp);
 ```
 
 ---
 
-## 🔹 **14. Bit Manipulation – popcount**
+## 🔹 **17. Bit Manipulation**
 
 ```cpp
 int n = 7; // 0111
-cout << __builtin_popcount(n); // Output: 3
+__builtin_popcount(n);        // Count set bits
+__builtin_popcountll(n);      // For long long
 ```
 
 ---
 
-## 🔹 **15. Next Permutation**
+## 🔹 **18. Next Permutation**
 
 ```cpp
 string s = "123";
 sort(s.begin(), s.end());
 do {
-    cout << s << endl;
+    cout << s << "\n";
 } while (next_permutation(s.begin(), s.end()));
 ```
 
 ---
 
-## 🔹 **Common STL Time Complexities**
+## 🔹 **19. Common STL Time Complexities**
 
-| Container/Operation      | Time Complexity      |
+| Operation                | Complexity           |
 | ------------------------ | -------------------- |
-| `vector.insert()`        | O(n)                 |
-| `set.insert()`           | O(log n)             |
+| `vector.push_back()`     | O(1) (Amortized)     |
+| `set/map.insert()`       | O(log n)             |
 | `unordered_set.insert()` | O(1) Avg, O(n) Worst |
-| `map.find()`             | O(log n)             |
 | `priority_queue.push()`  | O(log n)             |
+| `sort()`                 | O(n log n)           |
+| `find()` (vector)        | O(n)                 |
 
 ---
 
 ### 📌 Summary:
 
-STL simplifies DSA implementation with ready-to-use containers and algorithms. Knowing syntax, use-cases, and time complexities helps in competitive programming and efficient development.
+The STL is essential for writing clean, fast, and bug-free code in C++. Learning key containers, their **functions**, and **time complexities** gives you a strong edge in competitive programming and real-world development.
+
