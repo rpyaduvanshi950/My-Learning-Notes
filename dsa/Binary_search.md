@@ -114,3 +114,92 @@ int binarySearchRecursive(vector<int>& arr, int low, int high, int target) {
 | Iterative      | **O(log n)**    | **O(1)**                   |
 | Recursive      | **O(log n)**    | **O(log n)** (stack space) |
 
+
+## LOWER BOUND PROBLEM
+### 📘 **Concept Summary**
+
+* **Lower Bound**: First index where `arr[i] ≥ target`.
+* **Upper Bound**: First index where `arr[i] > target`.
+* **Search Insert Position**: Return index of `target` if found, else position where it should be inserted.
+* **Floor**: Greatest element `≤ target`.
+* **Ceil**: Smallest element `≥ target`.
+
+All can be efficiently implemented using **Binary Search**.
+
+---
+
+### 🧾 **Pseudo Code (Lower & Upper Bound)**
+
+```
+// Lower Bound
+function lowerBound(arr, target):
+    low = 0, high = len(arr) - 1
+    ans = len(arr)
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] >= target:
+            ans = mid
+            high = mid - 1
+        else:
+            low = mid + 1
+    return ans
+
+// Upper Bound
+function upperBound(arr, target):
+    low = 0, high = len(arr) - 1
+    ans = len(arr)
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] > target:
+            ans = mid
+            high = mid - 1
+        else:
+            low = mid + 1
+    return ans
+```
+
+---
+
+### 💻 **C++ Code**
+
+```cpp
+int lowerBound(vector<int>& arr, int target) {
+    int low = 0, high = arr.size() - 1, ans = arr.size();
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+        if (arr[mid] >= target) {
+            ans = mid;
+            high = mid - 1;
+        } else {
+            low = mid + 1;
+        }
+    }
+    return ans;
+}
+
+int upperBound(vector<int>& arr, int target) {
+    int low = 0, high = arr.size() - 1, ans = arr.size();
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+        if (arr[mid] > target) {
+            ans = mid;
+            high = mid - 1;
+        } else {
+            low = mid + 1;
+        }
+    }
+    return ans;
+}
+```
+
+---
+
+### ⏱️ **Complexity**
+
+| Operation         | Time         | Space    |
+| ----------------- | ------------ | -------- |
+| Lower/Upper Bound | **O(log n)** | **O(1)** |
+| Search Insert Pos | **O(log n)** | **O(1)** |
+| Floor/Ceil        | **O(log n)** | **O(1)** |
+
+---
