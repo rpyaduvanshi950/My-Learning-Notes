@@ -1,7 +1,4 @@
 
-
-# Page 01
-
 **Ionic Compounds: Unique Features and Hierarchical Structures**  
 
 - **Key Properties**  
@@ -123,7 +120,6 @@ These study notes break down fundamental inorganic concepts in a structured, stu
 ---
 
 
-# Page 02
 
 **Study Notes: Symmetry Elements & Operations (Page 2)**
 
@@ -246,7 +242,7 @@ These study notes break down fundamental inorganic concepts in a structured, stu
 ---
 
 
-# Page 03
+# 3
 
 **What Is a Space Group?**  
 - A **space group** describes the full set of symmetry operations that leave a crystal’s three-dimensional pattern unchanged.  
@@ -395,7 +391,7 @@ Use these notes to identify, classify, and work with crystal structures in inorg
 ---
 
 
-# Page 04
+# 4
 
 **Decoding Space Groups: A Step-by-Step Guide**
 
@@ -542,7 +538,7 @@ These notes break down **how** to read and interpret space-group symbols, practi
 ---
 
 
-# Page 05
+# 5
 
 **Fe₂O₃ (Hematite) Structure**  
 - **Chemical formula:** Fe₂O₃  
@@ -662,7 +658,7 @@ These structured notes cover the fundamentals of Fe₂O₃ crystal forms, key re
 ---
 
 
-# Page 06
+# 6
 
 **Study Notes: Inorganic Chemistry – Page 6**
 
@@ -815,7 +811,7 @@ These structured notes cover the key concepts on page 6: lattice energies via Bo
 ---
 
 
-# Page 07
+# 7
 
 **Ionic Radii, Coordination Number & Atomic Packing**  
 *Study Notes – Page 7*  
@@ -930,7 +926,7 @@ These structured notes cover the key concepts on page 6: lattice energies via Bo
 ---
 
 
-# Page 08
+# 8
 
 **Ionic Solid Packing Preferences**  
 - In ionic crystals, **anions** (negatively charged ions) form the primary close‐packed lattice.  
@@ -1033,7 +1029,7 @@ These structured notes summarize how ionic radii, packing types, and interstitia
 ---
 
 
-# Page 09
+# 9
 
 **Coordination Numbers in Ionic Crystals**
 
@@ -1153,5 +1149,450 @@ These structured notes summarize how ionic radii, packing types, and interstitia
   - Always compare radius ratio predictions with known structures and experimental data.  
   - Be ready to invoke polarization and covalency when the rule fails.  
   - Use complementary concepts (Madelung constants, lattice energy calculations, orbital considerations) for deeper analysis.
+
+
+---
+
+
+
+
+# Page 01
+
+**CHM241: Basic Inorganic Chemistry**  
+**Module II: Ionic Solids**  
+**Lecture 8 – Recap & Key Concepts**
+
+---
+
+## **1. Recap of Previous Lecture**
+
+- **CaF (Calcium Monofluoride) Does Not Exist**  
+  - Despite having a negative heat of formation (ΔH_f < 0), CaF is unstable.  
+    - *Size mismatch:* Ca²⁺ is too large to fit into a NaCl-type lattice coordination and F⁻ is too small.  
+    - *Comproportionation:*  
+      - 2 CaF → Ca + CaF₂  
+      - CaF disproportionates into metallic Ca and CaF₂.  
+
+- **ZnS Structure vs. Radius-Ratio Prediction**  
+  - Radius-ratio Zn²⁺/S²⁻ > 0.414 → expect octahedral sites (rock salt).  
+  - In reality, Zn²⁺ occupies tetrahedral holes (zinc blende or wurtzite).  
+    - *Reasons:*  
+      - S²⁻ crystallizes in an hcp (hexagonal close-packed) lattice → wurtzite.  
+      - Zn²⁺ has a high polarizing power → partial covalent character.  
+
+- **Equal-Size Cation & Anion → NaCl-Type Packing**  
+  - When cation and anion radii are similar:  
+    - Alternating arrangement of Na⁺ and Cl⁻ → each ion 6-coordinate.  
+    - Anions form the close-packed lattice; cations fill all octahedral holes.
+
+---
+
+## **2. Factors Affecting Crystal Structures**
+
+- **Radius-Ratio Rule**  
+  - Predicts coordination number (C.N.) based on r_cation/r_anion.  
+  - *Absolute for purely ionic solids.*  
+
+- **Covalent Character (Polarization)**  
+  - Partial covalency can override radius-ratio predictions.  
+  - Governed by **Fajan’s Rules** (see next section).  
+
+---
+
+## **3. When Do Ionic Bonds Acquire Covalency?**
+
+> Remember **Fajan’s Rules**: small, highly charged cations & large, polarizable anions → more covalent character.
+
+- **Key Conditions for Covalency**  
+  - Electronegativity difference &lt; 1.0.  
+  - Small cation radius & high positive charge.  
+  - Large anion radius & high negative charge.  
+  - High **ionic potential** of the cation.
+
+---
+
+## **4. Ionic Potential**
+
+- Defined as:  
+  ```
+  ionic potential, φ = Z⁺ / r (charge per unit radius)
+  ```  
+- Higher φ → stronger polarizing ability → more covalent bonding.
+
+- **Examples of Ionic Potential (φ)**  
+  | Ion  | Charge Z⁺ | Radius r (pm) | φ = Z⁺/r |
+  |------|-----------|---------------|----------|
+  | Li⁺  | +1        | ~90           | ~11.1    |
+  | Na⁺  | +1        | ~116          | ~8.6     |
+  | Be²⁺ | +2        | ~31           | ~64.5    |
+  | Mg²⁺ | +2        | ~72           | ~27.8    |
+  | Al³⁺ | +3        | ~53           | ~56.6    |
+  | B³⁺  | +3        | ~27           | ~111.1   |
+  | Ca²⁺ | +2        | ~100          | ~20.0    |
+  | Ga³⁺ | +3        | ~62           | ~48.4    |
+
+- **Trend:**  
+  - Across a period, smaller radius → higher φ → more covalent character in “ionic” compounds.
+
+---
+
+## **5. Ionic Potential Across the Periodic Table – Examples**
+
+- **Li⁺ vs. Mg²⁺**  
+  - Both form metal‐organic complexes (e.g., butyllithium & Grignard reagents).
+
+- **Be²⁺ vs. Al³⁺**  
+  - Both form polymeric halides with bridging halogens (BeCl₂: chains; AlCl₃: dimers/polymers).
+
+- **B³⁺ vs. Si⁴⁺**  
+  - Boranes (BₙHₘ) vs. silanes (SiₙHₘ) and their oxides show structural analogies.
+
+- **C vs. P; O vs. Cl; N vs. S**  
+  - Similar electronegativities → analogous oxyanions (e.g., CO₃²⁻ & PO₄³⁻) and halides.
+
+> **Caveat:** Similar φ often leads to similar behavior, but electronic structure & shielding also matter.
+
+---
+
+## **6. Rare Opposite Case: Polarizable Cation & Hard Anion**
+
+- **Why Rare?**  
+  - Large cation tends to retain its electron cloud → low polarizability of the anion.  
+  - Hard anion (small, high-charge) resists distortion.
+
+- **Example:**  
+  - SnCl₂ vs. SnCl₄  
+    - Sn²⁺ is more polarizing than Sn⁴⁺ in Cl lattice → SnCl₂ shows higher covalent character.
+
+---
+
+## **7. Effect of Electronic Configuration & Shielding**
+
+- **Case Study: Ca²⁺ vs. Hg²⁺**  
+  - Radii nearly identical (114 pm vs. 116 pm), same charge → similar φ.  
+  - **CaCl₂**  
+    - High melting/boiling points → primarily ionic.  
+  - **HgCl₂**  
+    - Much lower melting point; ~40% covalent character.  
+    - *Reason:* Poor shielding by filled 4f/5d orbitals in Hg → nucleus strongly polarizes Cl⁻.
+
+- **Polymorphism in ZnS**  
+  - ZnS exists in two forms:  
+    - Wurtzite (hcp S²⁻ lattice)  
+    - Zinc blende (ccp S²⁻ lattice)  
+  - Polarization & lattice energy differences favor one form under given conditions.
+
+---
+
+## **8. Summary & Key Takeaways**
+
+- The **radius-ratio rule** reliably predicts structures for *purely ionic* solids.  
+- **Polarization** (partial covalency) often leads to exceptions:  
+  - Predicted coordination → changed to satisfy covalent preferences.  
+  - **Fajan’s Rules** quantify propensity for covalency.  
+- **Ionic potential (φ)** is a powerful tool:  
+  - High φ → small, highly charged cation → strong polarizing power → covalent character.  
+- **Electronic configuration** and **shielding** further modulate polarization:  
+  - Transition-metal cations with filled d/f shells can be exceptionally polarizing.  
+
+---
+
+*Study Questions:*  
+1. Using Fajan’s rules, predict whether MgO or MgS has more covalent character.  
+2. Explain why AlF₃ is more ionic than AlI₃, even though Al³⁺ has the same φ in both.  
+3. Sketch and compare the coordination environments of ZnS in wurtzite vs. zinc blende.
+
+---
+
+
+# Page 02
+
+**Page 2 Study Notes: Polarization, Solubility, Reactivity, X-Rays & Spinels**
+
+---
+
+**1. Effect of Polarization on Ionic Compounds**
+
+- Ionic compounds are not purely electrostatic attractions between point charges.  
+- **Polarization**: distortion of anion electron cloud by a cation.  
+  - Depends on cation charge density (charge/size) and anion polarizability.  
+  - **Higher cation charge** and **smaller radius** ⇒ stronger polarization ⇒ greater covalent character.  
+  - **Reverse polarization** (anion polarizes cation) is nearly impossible (except SnCl₂).
+
+- Polarization dramatically influences:  
+  - Melting point (MPt)  
+  - Boiling point (BPt)  
+  - Solubility  
+
+---
+
+**2. Effect of Polarization on Solubility**
+
+- **Silver halides** in water illustrate polarization vs. solubility:
+
+  - AgF  
+    - Small, highly polarizing F⁻ is well‐hydrated ⇒ **readily soluble**.  
+  - AgCl  
+    - Moderate polarization ⇒ **partially soluble**; solubility ↑ in NH₃ (forms [Ag(NH₃)₂]⁺).  
+  - AgBr  
+    - Greater polarization & larger Br⁻ ⇒ **generally insoluble**, but dissolves weakly in NH₃.  
+  - AgI  
+    - Very large I⁻, strong polarization ⇒ **insoluble**, even with NH₃.
+
+- **Key idea**: strong cation–anion polarization ⇒ lattice energy ↑ & hydration energy ↓ ⇒ solubility ↓.
+
+---
+
+**3. Hydration Enthalpy & Effective Ionic Radii**
+
+- **Hydration enthalpy (ΔHₕ)**  
+  - Heat released when an ion is solvated by water molecules (exothermic for cations).  
+  - More negative ΔHₕ ⇒ stronger ion‐water interactions.
+
+- **Effective ionic radius (rₑₓₓ)**  
+  - Sum of ionic radius + 85 pm (approximate radius of O in H₂O).  
+  - Reflects “size” of hydrated ion.
+
+- **Connection to polarization**  
+  - Ions with very negative ΔHₕ are strongly solvated ⇒ behave as “small, highly polarizing” species in solution ⇒ can polarize counter-ions more.
+
+---
+
+**4. Effect of Polarization on Bond Length**
+
+- In a compound M–X, the bond length can be approximated by:  
+  `d(M–X) ≈ r(Mⁿ⁺) + r(Xᵐ⁻)`  
+- Stronger polarization (more covalent character) can shorten the bond relative to pure ionic model.
+
+- **Example**: Bond lengths in AgX series decrease less predictably because polarization distorts the “pure ionic” radii sum.
+
+---
+
+**5. Effect of Polarization on Chemical Reactivity**
+
+- **Decomposition of alkaline-earth carbonates** MCO₃ → MO + CO₂  
+  - Heavy polarization of CO₃²⁻ by M²⁺ destabilizes the carbonate, lowering decomposition temperature.
+
+- Decomposition temperatures (°C):  
+  - BeCO₃: unstable at RT (extremely polarizing Be²⁺)  
+  - MgCO₃: 350  
+  - CaCO₃: 900  
+  - SrCO₃: 1290  
+  - BaCO₃: 1360  
+
+- **Anomalies**: PbCO₃ and CdCO₃ decompose at ~350 °C despite ionic radii ≈ Ca²⁺.  
+  - Reason: d-electron poor shielding ⇒ Pb²⁺/Cd²⁺ are highly polarizing ⇒ carbonate destabilization → lower T₆₀₀.
+
+- **Takeaway**: increased covalent character (via polarization) often **destabilizes** “ionic” lattices, making them more reactive or easier to decompose.
+
+---
+
+**6. X-Ray Crystallography**
+
+- **What is an X-ray?**  
+  - Electromagnetic radiation with wavelengths (0.01–10 nm) comparable to interplanar spacings in crystals.
+
+- **Historical milestone**  
+  - 1895, Wilhelm Röntgen discovers X-rays:  
+    - Not deflected by magnets; passed through paper and flesh but absorbed by bone/metal.  
+    - First radiograph: his wife’s hand.
+
+- **XRD (X-Ray Diffraction)**  
+  - Non-destructive method to determine atomic arrangements.  
+  - Based on **Bragg’s Law**:  
+    `nλ = 2d sin θ`  
+    - n: diffraction order  
+    - λ: X-ray wavelength  
+    - d: interplanar spacing  
+    - θ: angle of incidence  
+
+- **XRD Applications**  
+  - Phase identification  
+  - Lattice parameters & unit cell dimensions  
+  - Crystallite size, strain, texture analysis  
+  - Purity and orientation studies  
+
+---
+
+**7. Spinels & Perovskites**
+
+- **Spinels (AB₂O₄)**  
+  - Cubic close-packed O²⁻ lattice with A (²⁺) and B (³⁺) cations in tetrahedral (Td) and octahedral (Oh) sites.  
+  - **Normal spinel**: A²⁺ in Td, B³⁺ in Oh.  
+    - Example: MgAl₂O₄ (gemstone “spinel”)  
+      - Mg²⁺ → Td, Al³⁺ → Oh  
+
+  - **Inverse spinel**: half B³⁺ occupy Td, remaining B³⁺ & A²⁺ occupy Oh.  
+    - Example: Fe₃O₄  
+      - Fe³⁺: 50% in Td, 50% in Oh  
+      - Fe²⁺: in Oh  
+
+- **Site preference drivers**  
+  - **Limiting radius ratio (LRR) rule**: fits of cation radius to site size.  
+  - **Crystal Field Stabilization Energy (CFSE)**: d-electron energies in Td vs. Oh fields.  
+  - The dominant factor (LRR or CFSE) dictates cation distribution and spinel type.
+
+---
+
+End of Page 2 Notes.
+
+---
+
+
+# Page 03
+
+**Study Notes: Spinels, Perovskites, and Related Materials**
+
+---
+
+## **1. Spinel vs. Inverse Spinel Structures**
+
+- **General Formula**  
+  - Spinel: `AB₂O₄`  
+  - A = divalent cation, B = trivalent cation  
+
+- **Octahedral (Oh) vs. Tetrahedral (Td) Sites**  
+  - The oxygen lattice provides both Oh and Td “holes.”  
+  - Cation preference depends on:  
+    - **Crystal Field Stabilization Energy (CFSE)**  
+      - Example: `Fe²⁺` in an Oh field has CFSE = –4 Dq ⇒ favors Oh site.  
+    - **Ionic Size**  
+      - Larger ions preferentially occupy larger coordination sites.  
+      - `Fe²⁺` is larger ⇒ prefers Oh.  
+      - `Fe³⁺` is smaller ⇒ can fit into Td holes.
+
+- **Normal vs. Inverse Spinel**  
+  - **Normal Spinel**  
+    - Divalent A²⁺ in Td, trivalent B³⁺ in Oh.  
+  - **Inverse Spinel**  
+    - One B³⁺ in Td, A²⁺ + remaining B³⁺ split between Oh.  
+    - Structural formula: `(B³⁺)[A²⁺B³⁺]O₄`.
+
+- **Common Examples**  
+  - MnFe₂O₄, NiFe₂O₄, FeCo₂O₄ (often inverse)  
+  - MnCo₂O₄, NiCo₂O₄ (mixed/inverted)  
+  - Mn₃O₄ (tetragonal spinel)
+
+---
+
+## **2. Perovskite Structures (ABX₃)**
+
+### **2.1 General Features**
+
+- **Formula**: `ABX₃`  
+  - A = larger cation (e.g., Sr²⁺, Ba²⁺, Cs⁺, CH₃NH₃⁺)  
+  - B = smaller cation (e.g., Ti⁴⁺, Pb²⁺, Fe³⁺/Mo⁴⁺)  
+  - X = anion, usually `O²⁻` or halide (Cl⁻/Br⁻/I⁻)
+
+- **Ideal Cubic Perovskite**  
+  - Lattice: cubic, space group *Pm–3m*.  
+  - A-site cation: at cube corner, **12-coordinate**.  
+  - B-site cation: at body center, **6-coordinate** (Oh octahedron).  
+  - X anions: at face centers, link A and B octahedra by corner-sharing.
+
+- **Coordination Numbers (CN)**  
+  - CN(A) = 12  
+  - CN(B) = 6  
+  - CN(X) = 4
+
+### **2.2 Visualizing the Unit Cell**
+
+- A-cation sits at the center of the cubo-octahedral cavity.  
+- B-cation is at the center of an `BX₆` octahedron.  
+- Each `BX₆` octahedron shares corners with neighboring octahedra, forming a 3D network.  
+- X anions on faces connect B centers to A cations.
+
+---
+
+## **3. Goldschmidt Tolerance Factor (t)**
+
+- **Definition**:  
+  `t = (r_A + r_X) / [√2  (r_B + r_X)]`  
+- **Interpretation**:  
+  - `t ≈ 1.0` ⇒ ideal cubic perovskite.  
+  - `t < 1` or `t > 1` ⇒ distortions to tetragonal, orthorhombic, rhombohedral.
+
+---
+
+## **4. Types of Perovskites**
+
+- **Oxide Perovskites** (`ABO₃`)  
+  - Examples: `SrTiO₃`, `BaTiO₃`  
+- **Halide Perovskites** (`ABX₃`, X = Cl, Br, I)  
+  - Examples: `CsPbBr₃`, `CH₃NH₃PbI₃`  
+- **Double Perovskites** (`A₂BB′X₆`)  
+  - Example: `Sr₂FeMoO₆` (Fe³⁺/Mo⁴⁺ ordered on B-site)  
+- **Distorted Perovskites**  
+  - Same composition but lower symmetry due to tilting of BX₆ octahedra.
+
+---
+
+## **5. Oxide Perovskites (ABO₃)**
+
+### **5.1 SrTiO₃**  
+- A = Sr²⁺ at 12-coordination, B = Ti⁴⁺ in octahedral coordination.  
+- Non-ferroelectric, remains cubic down to low T.
+
+### **5.2 BaTiO₃: A Ferroelectric Example**
+
+- **Phase Transitions**:  
+  - T > 120 °C: cubic, **paraelectric** (Ti⁴⁺ centrally located).  
+  - 5 °C < T < 120 °C: tetragonal, **ferroelectric** (Ti⁴⁺ displaces along c-axis).  
+  - Further lowering: orthorhombic → rhombohedral phases.
+
+- **Driving Forces**:  
+  - High T: symmetric cubic lowers enthalpy.  
+  - Low T: symmetry breaking (Ti off-center) lowers free energy and induces a permanent dipole.
+
+---
+
+## **6. Halide Perovskites (ABX₃)**
+
+- **Inorganic**: `CsPbBr₃`  
+- **Hybrid**: `CH₃NH₃PbI₃` (Methylammonium lead iodide)  
+
+- **Structural Similarity**  
+  - Same corner-sharing `BX₆` octahedra.  
+  - A-site can be organic/inorganic monovalent cation.  
+  - Offers tunable bandgaps and excellent light-harvesting properties.
+
+---
+
+## **7. Quantum Dots (QDs) and Perovskite QDs**
+
+- **Definition**: Semiconductor nanoparticles (2–10 nm) with discrete energy levels.  
+- **Key Properties**:  
+  - **Quantum Confinement** ⇒ size-dependent energy levels.  
+  - **Size-Tunable Emission**:  
+    - Smaller QDs ⇒ larger bandgap ⇒ blue emission.  
+    - Larger QDs ⇒ smaller bandgap ⇒ red emission.  
+  - **Applications**: LEDs, solar cells, bioimaging.
+
+- **Perovskite QDs** (`CsPbX₃`)  
+  - Tunable emission by varying X (Cl, Br, I).  
+  - High photoluminescence quantum yields.  
+  - Nobel Prize–winning work on QD synthesis and applications.
+
+---
+
+## **8. Double Perovskites (A₂BB′X₆)**
+
+- **Structure**: Alternating B and B′ cations in the octahedral sites.  
+- **Example**: `Sr₂FeMoO₆`  
+  - Fe³⁺ and Mo⁴⁺ occupy B sites in an ordered fashion.  
+  - Enhanced magnetic and electronic properties due to B–B′ ordering.
+
+---
+
+**Key Takeaways**
+
+- Cation size, charge, and CFSE dictate site occupancy in spinels.
+- Perovskites exhibit a rich variety of structures—ideal cubic to severely distorted.
+- Goldschmidt tolerance factor predicts stability and distortion of perovskite lattices.
+- Oxide perovskites can be ferroelectric; halide perovskites excel in optoelectronics.
+- Quantum dots, including perovskite QDs, have size-tunable optical properties.
+- Double perovskites introduce further compositional flexibility and novel properties.
+
+These structured notes should provide a clear roadmap to understanding spinel inversion, perovskite structures, their distortions, and the exciting applications in ferroelectrics and quantum dot technologies.
 
 ---
