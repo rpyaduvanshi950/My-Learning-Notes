@@ -27,7 +27,7 @@
 ---
 
 ### **4. Types of Bilingualism (White, 1991 – via Bhatia & Ritchie, 2013)**
-## 🔹 1. **Types of Language Minorities**
+#### 🔹 1. **Types of Language Minorities**
 
 This categorization is based on **how widespread or dominant a language is in a particular region** and how it interacts with the dominant language(s).
 
