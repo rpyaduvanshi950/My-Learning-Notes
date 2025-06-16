@@ -168,7 +168,7 @@ hist(posterior_samples, breaks=20, freq=FALSE,
 | Concept                 | Meaning                                                                    |                                    |
 | ----------------------- | -------------------------------------------------------------------------- | ---------------------------------- |
 | Prior $p(\theta)$       | Your belief about θ before seeing data                                     |                                    |
-| Likelihood ( p(y        | \theta) )                                                                  | How likely your data is for each θ |
+| Likelihood ( p(y/theta) )                                                                  | How likely your data is for each θ |
 | Marginal Likelihood     | Total chance of seeing data under the model                                |                                    |
 | Monte Carlo Estimate    | Use average over random samples from prior to estimate marginal likelihood |                                    |
 | Posterior Approximation | Resample θ using likelihood as weights                                     |                                    |
