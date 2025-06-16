@@ -3,19 +3,15 @@
 1. **Assume a Generative Process**
 
    * You assume your data was generated from a certain distribution, like:
-
-     $$
-     y_i \sim \text{Normal}(\mu, \sigma)
-     $$
+     y_i ~ normal(mu, sigma)
 
 2. **Specify Priors**
 
    * You express what you believe about the unknown parameters (e.g., $\mu$) before seeing the data:
 
-     $$
-     \mu \sim \text{Normal}(350, 50)
-     \quad \text{and you fix} \quad \sigma = 10
-     $$
+     mu ~ Normal(350, 50)
+     and you fix sigma = 10
+         
 
 3. **Collect Observations**
 
