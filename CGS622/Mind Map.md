@@ -140,3 +140,58 @@ LANGUAGE ACQUISITION IN INFANTS (BI/MULTILINGUAL) – II
 ```
 
 ---
+## Lec 7 Mind Map: Language Acquisition in Bi/Multilinguals – III
+---
+
+```text
+Language Acquisition in Bi/Multilinguals – III
+│
+├── 1. Phonemic Development
+│   ├── Native language phoneme perception ↑ with age
+│   └── Non-native phoneme perception ↓ with age
+│
+├── 2. Sequential Bilingualism
+│   ├── Second language learned after first
+│   ├── Brain becomes language-specific before L2
+│   └── Harder to acquire new phonemes (e.g., Japanese /l/ vs /r/)
+│
+│   └── Study: Kuhl et al. (2003)
+│       ├── English infants exposed to Mandarin
+│       ├── Live interaction enabled phoneme learning
+│       └── Audio/video exposure failed to produce same effect
+│
+├── 3. Simultaneous Bilingualism
+│   ├── Two languages from birth
+│   ├── Brain processes two phonetic systems at once
+│   └── Uses statistical learning to form phoneme categories
+│
+│   └── Study: Maye et al. (2002, 2006)
+│       ├── Bimodal input → 2 phoneme categories
+│       └── Unimodal input → 1 phoneme category
+│
+│   └── Study: Bosch & Sebastian-Galles (2003)
+│       ├── Tested Catalan-Spanish infants (4, 8, 12 months)
+│       ├── Sound: /e/ in "bait" vs /ɛ/ in "bet"
+│       ├── 8-month bilinguals failed to perceive contrast
+│       └── 12-month bilinguals regained ability
+│
+├── 4. Influence of Cross-Language Overlap
+│   ├── Similar sounds between languages delay contrast development
+│   └── May form single category due to overlap
+│
+├── 5. Frequency of Exposure
+│   ├── Frequent hearing of phonemes → better distinction
+│   └── Interaction between distribution and frequency
+│
+│   └── Study: Sundara et al. (2008)
+│       ├── French-English bilingual infants
+│       ├── Discriminated English /d/ vs French /d/
+│       └── Frequency overcomes distributional overlap
+│
+└── 6. Summary Points
+    ├── Simultaneous bilinguals = slower but successful phonemic development
+    ├── Cross-language distribution delays development
+    └── Frequency and interaction play critical roles
+```
+
+---
