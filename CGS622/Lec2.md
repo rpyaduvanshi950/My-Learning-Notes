@@ -1,7 +1,3 @@
-Here is a **detailed explanation** of all the key concepts from **Lecture 2** of *Psychology of Bilingualism & Multilingualism* by **Dr. Ark Verma**, along with real-life examples and essay-style questions.
-
----
-
 ## 🧠 FOCUS: The Individual in Bilingualism – Proficiency
 
 ---
@@ -212,7 +208,3 @@ No! They also gain **cognitive advantages**:
 * Define both terms.
 * Give real-life conversation examples.
 * Explain how it’s normal and context-driven.
-
----
-
-Would you like model answers for any of these questions or practice quizzes based on this lecture?
